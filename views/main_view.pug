@@ -1,0 +1,16 @@
+extends ./layout
+block content
+    //- if content === 'books'
+    //-     include ./snippets/_search
+    include ./snippets/filters
+    table
+        include ./snippets/table_headers
+        tbody
+            if content === "loans"
+                //- include ./snippets/loan_table
+            if content === "books"
+                include ./snippets/books_table
+            if content === "patrons"
+                //- include ./snippets/patron_table
+    //- if content === "books" || content === "loans"
+    //-     include ./snippets/_pagination

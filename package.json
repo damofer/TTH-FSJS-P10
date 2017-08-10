@@ -9,6 +9,11 @@
   "author": "David Mogollon",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.3",
     "sequelize": "^4.4.2",
     "sequelize-cli": "^2.8.0",
     "sqlite3": "^3.1.8"
