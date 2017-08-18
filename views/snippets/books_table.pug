@@ -1,7 +1,6 @@
-for book in bookData
+for book in books
     tr
-        td 
-           a(href='/${content}') = book.title
+        td= book.title             
         td= book.author
         td= book.genre
         td= book.first_published
