@@ -8,7 +8,7 @@ const path = require('path');
 
 const homeRoute = require('./routes');
 const booksRoute = require('./routes/books');
-// const loansRoute = require('./routes/loans');
+const loansRoute = require('./routes/loans');
 // const patronsRoute = require('./routes/patrons');
 
 const app = express();
@@ -26,7 +26,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use('/', homeRoute);
 app.use('/books', booksRoute);
-// app.use('/loans', loansRoute);
+app.use('/loans', loansRoute);
 // app.use('/patrons', patronsRoute);
 
 
